@@ -80,7 +80,7 @@ class LicenseController extends Controller
         $license->expirable = $this->expirable ?? false;
         $license->notes = $this->notes ?? null;
         $license->privateNotes = $this->privateNotes ?? null;
-        $license->privateNotes = $this->count;
+        $license->count = $this->count;
 
         $this->stdout(PHP_EOL.
             "-- ".Craft::t('craftnet-cp', 'NEW LICENSE')." ----------------------------".PHP_EOL.
